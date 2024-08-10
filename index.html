@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback UI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="feedback-container" id="feedback-container">
+        <h2>Feedback UI</h2>
+        <div class="feedback-options">
+            <div class="feedback-option" id="unhappy" onclick="selectFeedback('Unhappy')">
+                😞
+                <p>Unhappy</p>
+            </div>
+            <div class="feedback-option" id="neutral" onclick="selectFeedback('Neutral')">
+                😐
+                <p>Neutral</p>
+            </div>
+            <div class="feedback-option" id="satisfied" onclick="selectFeedback('Satisfied')">
+                😊
+                <p>Satisfied</p>
+            </div>
+        </div>
+        <button id="send-review" onclick="sendReview()">Send Review</button>
+    </div>
+
+    <div class="thank-you-container" id="thank-you-container" style="display: none;">
+        <h2>Thank you!</h2>
+        <p id="selected-feedback">Feedback: </p>
+        <p>We'll use your feedback to improve our customer support.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
